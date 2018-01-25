@@ -4,6 +4,7 @@ var PostSchema = new mongoose.Schema({
     idPost: String,
     idUser: String,
     datePost: Date,
+    title: String,
     message: String
 });
 

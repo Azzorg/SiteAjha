@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Actualité</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{ post.title }}</td>
+        <td>{{ post.idUser }}</td>
+        <td>{{ post.datePost }}</td>
+        <td>Show more details</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
