@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {
@@ -15,8 +16,13 @@ const appRoutes: Routes = [
     data: { title: 'Actualité' }
   },
   {
+    path: 'home',
+    component: HomeComponent,
+    data: { title: 'Accueil' }
+  },
+  {
     path: '',
-    redirectTo: '/posts',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];
@@ -25,7 +31,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PostComponent
+    PostComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
